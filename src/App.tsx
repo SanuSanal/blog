@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import FooterBanner from './components/FooterBanner';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Route path='/contact' Component={ContactPage} />
       </Routes>
 
-      <FooterBanner />
       <Footer />
     </Router>
   );

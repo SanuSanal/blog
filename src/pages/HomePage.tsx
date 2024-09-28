@@ -1,4 +1,5 @@
 import Article from "../components/Article";
+import FooterBanner from "../components/FooterBanner";
 import HighlightPost from "../components/HighlightPost";
 import TrendingPost from "../components/TrendingPost";
 
@@ -60,6 +61,8 @@ function HomePage() {
                     </div>
                 </div>
             </section>
+
+            <FooterBanner />
         </>
     );
 }
