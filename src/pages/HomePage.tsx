@@ -29,13 +29,13 @@ function HomePage() {
                                 <nav aria-label="Page navigation example" className="nav-bg">
                                     <ul className="pagination">
                                         <li className="page-item">
-                                            <a className="page-link active" href="#">1</a>
+                                            <a className="page-link active" href="/">1</a>
                                         </li>
-                                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                        <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                        <li className="page-item"><a className="page-link" href="#">4</a></li>
+                                        <li className="page-item"><a className="page-link" href="/">2</a></li>
+                                        <li className="page-item"><a className="page-link" href="/">3</a></li>
+                                        <li className="page-item"><a className="page-link" href="/">4</a></li>
                                         <li className="page-item">
-                                            <a className="page-link" href="#">
+                                            <a className="page-link" href="/">
                                                 <i className="fa fa-angle-right"></i>
                                             </a>
                                         </li>
