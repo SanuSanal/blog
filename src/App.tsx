@@ -10,7 +10,7 @@ import FooterBanner from './components/FooterBanner';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
 
       <Routes>
