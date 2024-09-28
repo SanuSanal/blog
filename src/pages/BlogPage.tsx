@@ -94,13 +94,13 @@ function BlogPage() {
                         </article>
                         <div className="blog-single-presentation">
                             <ul>
-                                <li> <Link to="/blog" className="tag">PREVIOUS</Link>
-                                    <Link to="/blog" className="title">I Moved Across the Country
+                                <li> <Link to="/article" className="tag">PREVIOUS</Link>
+                                    <Link to="/article" className="title">I Moved Across the Country
                                         and Never Looked Back</Link>
                                     <i className="fa fa-clock-o"></i>&nbsp;
                                     October 19, 2020 - 2 min
                                 </li>
-                                <li> <Link to="/blog" className="tag">Next</Link><Link to="/blog" className="title">Every Next Level of Your Life
+                                <li> <Link to="/article" className="tag">Next</Link><Link to="/article" className="title">Every Next Level of Your Life
                                     Will Demand Link Different</Link><i className="fa fa-clock-o"></i>&nbsp;
                                     October 19, 2020 - 2 min</li>
                             </ul>

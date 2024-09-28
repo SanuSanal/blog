@@ -12,7 +12,7 @@ function Article() {
               <Link to="/category">Travel</Link>
             </div>
             <div className="blog-post-title">
-              <Link to="/blog">Five Things You Need to Know to Start Your Day</Link>
+              <Link to="/article">Five Things You Need to Know to Start Your Day</Link>
             </div>
             <div className="blog-post-meta">
               <ul>
@@ -27,7 +27,7 @@ function Article() {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <Link to="/blog" className="blog-post-action">read more <i className="fa fa-angle-right"></i></Link>
+            <Link to="/article" className="blog-post-action">read more <i className="fa fa-angle-right"></i></Link>
           </div>
         </article>
     );

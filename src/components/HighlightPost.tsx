@@ -14,7 +14,7 @@ function HighlightPost() {
                                     <img src={author} alt="author" />
                                     <p>By <span>Mary Astor</span></p>
                                 </div>
-                                <Link to="blog" className="featured-post-title">
+                                <Link to="/article" className="featured-post-title">
                                     Every Next Level of Your Life Will Demand
                                 </Link>
                                 <ul className="featured-post-meta">
