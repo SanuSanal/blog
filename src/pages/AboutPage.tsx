@@ -1,4 +1,4 @@
-import actior from '../images/about/actior.png';
+import author from '../images/about/author.png';
 import blob1 from '../images/about/blob1.svg';
 import blob2 from '../images/about/blob2.svg';
 import banner from '../images/about/banner.png';
@@ -10,7 +10,7 @@ function AboutPage() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="about-me">
-                            <img src={actior} alt="image" />
+                            <img src={author} alt="image" />
                             <h3>Hi I Am Mary Astor</h3>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                                 et dolore magna aliquyam erat, sed diam voluptua. At vero eos et

@@ -2,11 +2,16 @@ import Article from "../components/Article";
 import FooterBanner from "../components/FooterBanner";
 import HighlightPost from "../components/HighlightPost";
 import TrendingPost from "../components/TrendingPost";
+import BlogPost from "../data/BlogPost";
+import articleContents from "../data/blog-content";
 
 function HomePage() {
+
+    const highlightedArticle = articleContents.find(a => a.highlighted) as BlogPost;
+
     return (
         <>
-            <HighlightPost />
+            <HighlightPost highlightedArticle={highlightedArticle} />
 
             <section className="blog">
                 <div className="container">
@@ -17,13 +22,7 @@ function HomePage() {
                                 <p>View the latest news on Blogger</p>
                             </div>
 
-                            <Article />
-                            <Article />
-                            <Article />
-                            <Article />
-                            <Article />
-                            <Article />
-                            <Article />
+                            {articleContents.map((blog, key) => <Article article={blog} key={key} />)}
 
                             <div className="blog-post-pagination">
                                 <nav aria-label="Page navigation example" className="nav-bg">
@@ -51,10 +50,7 @@ function HomePage() {
                                     <h2>Trending post</h2>
                                 </div>
 
-                                <TrendingPost />
-                                <TrendingPost />
-                                <TrendingPost />
-                                <TrendingPost />
+                                {articleContents.filter(a => a.trending).map((blog, key) => <TrendingPost article={blog} key={key} />)}
 
                             </div>
                         </div>

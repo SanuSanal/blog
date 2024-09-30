@@ -1,0 +1,53 @@
+# Heading Level 1
+## Heading Level 2
+### Heading Level 3
+
+This is a paragraph with **bold** text, _italicized_ text, and **_both_**.
+
+Here is a [link to Google](https://www.google.com).
+
+### Blockquote
+> This is a blockquote. It's useful for quoting text from other sources.
+
+### Unordered List
+- Item 1
+- Item 2
+  - Nested Item 1
+  - Nested Item 2
+- Item 3
+
+### Ordered List
+1. First item
+2. Second item
+   1. Nested item 1
+   2. Nested item 2
+3. Third item
+
+### Code Block
+\`\`\`javascript
+// This is a JavaScript code block
+function greet() {
+  console.log("Hello, World!");
+}
+\`\`\`
+
+### Inline Code
+Here is some \`inline code\`.
+
+### Horizontal Rule
+---
+
+### Table
+| Name        | Age | Occupation  |
+| ----------- | --- | ----------- |
+| John Doe    | 30  | Developer   |
+| Jane Smith  | 25  | Designer    |
+| Bob Johnson | 40  | Manager     |
+
+### Images
+![Alt text for an image](https://sanusanal.github.io/blog/static/media/blog-single.f3e64caa72ec5add0560.png)
+![Example Image](/images/image.png)
+
+### HTML Elements
+You can also include HTML in Markdown. For example:
+<div style="background-color: lightgray; padding: 10px;">This is a div with inline styles.</div>

@@ -1,16 +1,16 @@
-import image1 from '../images/blog/case-studies-1.png';
-import image2 from '../images/blog/case-studies-2.png';
-import image3 from '../images/blog/case-studies-3.png';
-import image4 from '../images/blog/case-studies-4.png';
-import image5 from '../images/blog/case-studies-5.png';
-import image6 from '../images/blog/case-studies-6.png';
+import image1 from '../images/banner/java.png';
+import image2 from '../images/banner/spring.png';
+import image3 from '../images/banner/react.png';
+import image4 from '../images/banner/flutter.png';
+import image5 from '../images/banner/python.png';
+import image6 from '../images/banner/aws.png';
 
 function FooterBanner() {
     return (
         <section className="instagram">
-            <a href="https://www.instagram.com/a_bad_code" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram" aria-hidden="true"></i>
-                <span>@a_bad_code</span>
+            <a href="https://github.com/sanusanal" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github" aria-hidden="true"></i>
+                <span>@sanusanal</span>
             </a>
             <div className="container-fluid">
                 <div className="row">

@@ -1,27 +1,27 @@
 import { Link } from 'react-router-dom';
-import trendingPostThumb from '../images/blog/blog-thum-1.png';
-import icon from '../images/blog/icon.svg';
+import icon from '../images/icon.svg';
+import BlogPost from '../data/BlogPost';
 
-function TrendingPost() {
+function TrendingPost({article}: {article: BlogPost}) {
     return (
         <div className="latest-widget">
             <div className="latest-widget-thum">
-              <Link to='/article'>
-                <img src={trendingPostThumb} alt="blog-thum" /></Link>
+              <Link to={`/article/${article.key}`}>
+                <img src={`${window.location.origin}/blog${article.articlePostImg}`} alt="blog-thum" /></Link>
               <div className="icon">
-                <Link to='/article'>
+                <Link to={`/article/${article.key}`}>
                   <img src={icon} alt="icon" /></Link>
               </div>
             </div>
             <div className="latest-widget-content">
               <div className="content-title">
-                <Link to='/article'>Five Things You Need to Know to Start Your Day</Link>
+                <Link to={`/article/${article.key}`}>{article.title}</Link>
               </div>
               <div className="content-meta">
                 <ul>
                   <li>
                     <i className="fa fa-clock-o"></i>&nbsp;
-                    October 19, 2020 - 2 min
+                    {article.date} - {article.timeToRead}
                   </li>
                 </ul>
               </div>

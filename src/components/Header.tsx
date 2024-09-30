@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../images/logo.svg';
 
 function Header() {
     return (
@@ -7,7 +6,8 @@ function Header() {
         <div className="container">
   
           <Link className="navbar-brand" to="/">
-            <img className="logo-main" src={ logo } alt="logo" />
+            {/* <img className="logo-main" src={ logo } alt="logo" /> */}
+            <span className='logo'>DEVLOG</span>
           </Link>
   
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
