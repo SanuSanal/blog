@@ -48,7 +48,7 @@ function Footer() {
         <div className="row">
           <div className="col-lg-12">
             <div className="copy-right">
-              <p>© Copyright <span id="copyrightYear"></span> - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> Distributed By <a href="https://themewagon.com/" target="blank">ThemeWagon</a></p>
+              <p>© Copyright <span id="copyrightYear">{(new Date).getFullYear()}</span> - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> Distributed By <a href="https://themewagon.com/" target="blank">ThemeWagon</a></p>
             </div>
           </div>
         </div>

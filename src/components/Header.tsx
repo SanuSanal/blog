@@ -6,7 +6,6 @@ function Header() {
         <div className="container">
   
           <Link className="navbar-brand" to="/">
-            {/* <img className="logo-main" src={ logo } alt="logo" /> */}
             <span className='logo'>DEVLOG</span>
           </Link>
   
