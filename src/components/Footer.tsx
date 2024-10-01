@@ -7,7 +7,7 @@ function Footer() {
         <div className="row">
           <div className="col-lg-6 mx-auto text-center">
             <div className="footer-logo">
-              <span className='logo'>DEVLOG</span>
+              <span className='logo'>DevLogs</span>
             </div>
           </div>
         </div>

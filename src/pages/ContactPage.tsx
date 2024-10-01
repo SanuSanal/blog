@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 function ContactPage() {
+    const [isChecked, setIsChecked] = useState(false);
+
+    const handleCheckboxChange = (event : React.ChangeEvent<HTMLInputElement>) => {
+        setIsChecked(event.target.checked);
+    };
+    
     return (
         <section className="contact">
             <div className="container">
@@ -6,14 +14,16 @@ function ContactPage() {
                     <div className="col-lg-12">
                         <div className="contact-information">
                             <h2>Contact Me</h2>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum Stet
-                                clita.</p>
+                            <p>Let’s Connect! ✉️ Have a burning question, an idea to share, or just feel like saying hello? 
+                                I’d love to hear from you! Whether you want to discuss the latest tech trends or send me your 
+                                favorite cat video, this is the place to do it. Fill out the form below, and I promise to 
+                                respond faster than your Wi-Fi speed (well, almost)! Your message is like a little gift that 
+                                brightens my day—so let’s unwrap it together!</p>
                             <ul>
                                 <li><i className="fa fa-map-marker" aria-hidden="true"></i>
-                                    <p>Address: Lorem 142 Str., 2352, Ipsum, State, USA</p>
+                                    <p>Address: Dublin, Ireland</p>
                                 </li>
-                                <li><i className="fa fa-phone" aria-hidden="true"></i><a href="tel:+33-257634 534">Phone: +33-257634 534</a>
+                                <li><i className="fa fa-phone" aria-hidden="true"></i><a href="tel:+353-089 XXX XXXX">Phone: +353 - 089 XXX XXXX</a>
                                 </li>
                             </ul>
 
@@ -24,32 +34,29 @@ function ContactPage() {
                     <div className="col-lg-6">
                         <div className="contact-form">
                             <h2>Contact Form</h2>
-                            <form className="row" action="https://fabform.io/f/9APkcbe" method="post">
+                            <form className="row" action="https://getform.io/f/anledowa" method="post">
                                 <div className="col-md-6">
-                                    <input type="text" className="form-control" name="name" id="exampleFormControlInput1" placeholder="Your Name" />
+                                    <input type="text" className="form-control" name="name" id="exampleFormControlInput1" placeholder="Your Name" required/>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="email" className="form-control" name="email" id="validationCustom02"  placeholder="Your Email" />
+                                    <input type="email" className="form-control" name="email" id="validationCustom02"  placeholder="Your Email" required/>
                                 </div>
                                 <div className="col-md-12">
                                     <textarea className="form-control" id="exampleFormControlTextarea1" 
-                                        placeholder="Message here…"></textarea>
+                                        placeholder="Message here…" required></textarea>
                                 </div>
                                 <div className="col-md-12">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                        <input className="form-check-input" type="checkbox" id="gridCheck" onChange={handleCheckboxChange}/>
                                         <label className="form-check-label" >
                                             I agree that my submitted data is being collected and stored.
                                         </label>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
-                                    <button type="submit" className="btn btn-primary">Send Message</button>
+                                    <button type="submit" className="btn btn-primary" disabled={!isChecked}>Send Message</button>
                                 </div>
                             </form>
-                            <p className="contact-form-generator">
-                                <strong>** </strong> <a href="https://fabform.io/" target="_blank">Static website forms</a>
-                            </p>
                         </div>
                     </div>
                     <div className="col-lg-6">

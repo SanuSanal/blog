@@ -11,7 +11,7 @@ function AboutPage() {
                     <div className="col-lg-12">
                         <div className="about-me">
                             <img src={author} alt="image" />
-                            <h3>Hi I Am Mary Astor</h3>
+                            <h3>Hi I Sanal Machingal</h3>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                                 et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                                 accusam et justo duo dolores et ea rebum.

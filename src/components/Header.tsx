@@ -6,7 +6,7 @@ function Header() {
         <div className="container">
   
           <Link className="navbar-brand" to="/">
-            <span className='logo'>DEVLOG</span>
+            <span className='logo'>DevLogs</span>
           </Link>
   
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">

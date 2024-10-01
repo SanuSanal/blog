@@ -15,10 +15,10 @@ const articleContents: Article[] = [
         tags: ["yaml"],
         description: "This is a comprehensive introduction to YAML, designed for beginners. The article explains the basics of YAML syntax, including indentation rules, key-value pairs, lists, and nested structures.",
         content: `
-YAML (YAML Ain't Markup Language) is a simple, human-readable data format used primarily for configuration files. 
-It is designed to be easy to read and write while still being powerful enough to represent complex data structures. 
-YAML is widely used in various fields, including software development, DevOps, cloud configuration, and even by popular 
-applications like Docker, Kubernetes, and Ansible.
+YAML is not a markup language, even though its expansion is *Yet Another Markup Language*. It is a simple, human-readable 
+data format used primarily for configuration files. It is designed to be easy to read and write while still being powerful enough 
+to represent complex data structures. YAML is widely used in various fields, including software development, DevOps, cloud 
+configuration, and even by popular applications like Docker, Kubernetes, and Ansible.
 
 In this tutorial, we'll cover the basics of YAML, its syntax, and how you can use it in various scenarios.
 
@@ -132,12 +132,12 @@ person: {first_name: John, last_name: Doe}
 
 YAML uses special characters for specific purposes:
 
- - Colon (:) separates keys from values.
- - Dash (-) indicates a list item.
- - Pipe (|) for multiline strings that preserve line breaks.
- - Greater than sign (>) for multiline strings that fold into a single line.
+ - *Colon (:)* separates keys from values.
+ - *Dash (-)* indicates a list item.
+ - *Pipe (|)* for multiline strings that preserve line breaks.
+ - *Greater than sign (>)* for multiline strings that fold into a single line.
 
-### Multiline Strings
+#### Multiline Strings
 
 If you need to write a multiline string, YAML offers two ways:
 
@@ -155,7 +155,7 @@ description: >
   that is folded into a single line.
 \`\`\`
 
-### Anchors and Aliases
+#### Anchors and Aliases
 
 YAML allows you to reuse values with anchors and aliases. This is useful when you have repeated values.
 \`\`\`
