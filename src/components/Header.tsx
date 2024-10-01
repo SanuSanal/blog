@@ -9,7 +9,7 @@ function Header() {
             <span className='logo'>DEVLOG</span>
           </Link>
   
-          <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+          <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>

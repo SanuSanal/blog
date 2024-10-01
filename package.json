@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@popperjs/core": "^2.11.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,7 @@
     "@types/node": "^16.18.112",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
+    "bootstrap": "^5.3.3",
     "dompurify": "^3.1.7",
     "marked": "^14.1.2",
     "react": "^18.3.1",
@@ -48,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
     "@types/dompurify": "^3.0.5",
     "gh-pages": "^6.1.1"
   }

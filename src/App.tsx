@@ -1,5 +1,7 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
