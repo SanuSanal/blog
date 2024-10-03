@@ -238,7 +238,74 @@ to manage configurations in tools like Docker, Kubernetes, Ansible, and many mor
 As you work with YAML, remember to follow proper indentation, and make use of its powerful features like anchors and aliases 
 to simplify your configuration files.
     `
-    }
+    },
+    {
+      id: 2,
+      key: "openapi-generator-tutorial",
+      date: "October 03, 2024",
+      timeToRead: "3 min",
+      title: "Getting Started with OpenAPI Generator for Implementing an OpenAPI Server",
+      bannerImg: "",
+      highlightedPostImg: "",
+      articlePostImg: "",
+      highlighted: true,
+      trending: true,
+      tags: ["OpenAPI"],
+      description: "",
+      content: `
+### Overview of OpenAPI Generator
+
+OpenAPI Generator can generate code from the OpenAPI specification. It can create server stubs, API documentation, configuration files and test cases based on the specification file. OpenAPI supports frameworks and programming languages. Java, C#, C++, PHP, Python are some of the main programming languages supported by OpenAPI Generator.
+
+In this article, We'll learn how to setup a OpenAPI Server using OpenAPI Generator. It will be using Spring Boot framework and maven plugin of OpenAPI Generator for generating code.
+
+### Create a Spring Boot
+
+As the first step, create a Spring Boot application. You can use spring initializr to generate the codebase. Include Spring MVC dependency. We will need this as we are going to create a RESTful service.
+
+### Configuring OpenAPI Generator plugin
+
+To generate Java files from the specification file(which we will discuss in detail later in the article) in spring boot application we need to configure the OpenAPI Generator. 
+
+Open the pom.xml file present in the root of the project. 
+
+ - Add dependencies: Add the openapi-generator-maven-plugin dependency inside dependencies section. 7.8.0 is the latest version while writing this article.
+
+\`\`\`
+<dependency>
+    <groupId>org.openapitools</groupId>
+    <artifactId>openapi-generator-maven-plugin</artifactId>
+    <version>7.8.0</version>
+</dependency>
+\`\`\`
+
+ - Configure plugin: Add the plugin configuration in the build plugins section of the pom.xml
+ 
+\`\`\`
+<plugin>
+      <groupId>org.openapitools</groupId>
+      <artifactId>openapi-generator-maven-plugin</artifactId>
+      <version>5.2.1</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>generate</goal>
+          </goals>
+          <configuration>
+            <inputSpec>\${project.basedir}/src/main/resources/apispec.yml</inputSpec>
+            <generatorName>java</generatorName>
+            <outputDir>\${project.build.directory}/generated-sources/openapi</outputDir>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
+\`\`\`
+
+### Create the OpenAPI Generator api specification file
+
+This is the 
+  `
+  }
 ];
 
 export default articleContents;
