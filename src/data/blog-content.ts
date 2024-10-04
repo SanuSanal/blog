@@ -303,7 +303,142 @@ Open the pom.xml file present in the root of the project.
 
 ### Create the OpenAPI Generator api specification file
 
-This is the 
+This is the main art of the OpenAPI Generator. apispec.yml file specifies how what all classes need to be created and how those should be created. 
+
+Structure of  apispec.yml
+
+1. OpenAPI version: At the begining of the file you need to specify the OpenAPI version you are using.
+
+openapi: 3.0.0
+
+
+2. Info block: This section contains the metadata about the API, such as , Title, version and description.
+
+info:
+  title: OpenAPI Generator example
+  version: 1.0.0
+  description: This is an example server implemented using OpenAPI Generator
+
+
+3. Servers: Here, we need to list the urls where the API is hosted. 
+
+servers:
+  - url: http://localhost:8080/api
+
+
+4. Paths: This section describes all the available endpoints or paths in the API server.
+
+
+paths:
+  /users:
+    get:
+      summary: Get all users
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+
+5. Components: Describes all the reusable components like data models (schemas), parameters, and responses(Body and Error objects).
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+
+Example apispec.yml
+
+This is a example of an apispec.yml file:
+
+
+openapi: 3.0.0
+info:
+  title: User API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/api
+paths:
+  /users:
+    get:
+      summary: Get all users
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+
+Add this file at the location specified in the pom.cml plugin at "/src/main/resources/" . Detailed explanation apispec.yml can be read <Link to="/apispec-explanation">here</Link>. 
+
+Generating source code
+
+Run the maven build command to generate the source code as per the apispec.yml file.
+
+mvn clean compile
+
+Check the generated sources folder for the automatically created by the build plugin. You can find it at "target/generated-sources/openapi".
+
+Optional Steps
+
+You can view the OpenAPI documentation using the swagger UI. you can follow these steps to enable swagger UI.
+
+1. Adding swagger dependecies: Add the "springdoc-openapi-ui" dependecy in pom.xml.
+
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-ui</artifactId>
+    <version>1.8.0</version>
+</dependency>
+
+
+2. Enable OpenAPI Documentation: Add the "@OpenAPIDefinition" to enable the Swagger UI for the application.
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+
+@SpringBootApplication
+@OpenAPIDefinition
+public class MyApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+
+
+3. Run the application: After making these configurations, start the spring boot application.
+
+4. Access the swagger UI: Once the application is started, open any browser and in the search bar enter "http://localhost:8080/swagger-ui.html" to view the user friendly interface. 
+
+Note: you can modify the Swagger UI path in application.properties by setting "springdoc.swagger-ui.path".
+
+Conclusion
+
+Using the apispec.yml file in spring boot application you can clearly define your API and easily generate the Java files. This will reduce the manual coding and documenting overhead. OpenAPI generator will create the documentaion and Java files based on the specification wil ensuring conistency across the application.
   `
   }
 ];
