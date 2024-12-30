@@ -12,13 +12,8 @@ function AboutPage() {
                         <div className="about-me">
                             <img src={author} alt="image" />
                             <h3>Hi I Sanal Machingal</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum.
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                amet.
-                                , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et accusam et justo </p>
+                            <p>I’m a software engineer specializing in Java backend development. Coding is more than just a profession for me—it’s a passion that drives me to constantly explore new programming languages and frameworks. Over the years, I’ve created apps in Flutter, built POCs using Spring Boot, Spring Integration, and Spring Security, and even dabbled in Python scripts, like automating WhatsApp message sending. Beyond the world of code, I’m an avid reader and sports enthusiast who enjoys playing football and cricket in my free time.</p>
+                            <p>This blog is my space to document my findings—from programming tips to technical experiments. It’s not just a personal journal for future reference but also a way to help others who might face similar challenges in their tech journey. </p>
                             <div className="banner">
                                 <div className="about-shape-right-top">
                                     <img src={blob1} alt="svg" />
@@ -29,18 +24,8 @@ function AboutPage() {
                                 <img src={banner} alt="banner" />
                             </div>
                             <h3>Hey there, what’s up?</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                amet.
-                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                sea takimata sanctus est Lorem ipsum dolor sit amet. <br /> <br />Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                                consetetur sadipscing elitr, sed diam nonumy.
-                            </p>
+                            <p>Welcome to my little corner of the internet! I believe that learning is a journey best enjoyed together. Whether you’re a seasoned developer or just starting out, I’d love to collaborate, discuss ideas, and exchange knowledge. Technology evolves rapidly, and there’s always something new to explore—why not do it together?</p>
+                            <p>Feel free to share your thoughts, ask questions, or even challenge me with your unique perspectives. Let’s create a space where we can learn, grow, and inspire each other.</p>
                             <h3>I am a social person</h3>
                             <ul className="soicel-icon">
                                 <li> <a href="https://github.com/SanuSanal" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a></li>
