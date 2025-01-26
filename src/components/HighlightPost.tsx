@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import author from '../images/about/author.png';
+import author from '../images/about/author.jpg';
 import BlogPost from '../data/BlogPost';
 
 function HighlightPost({highlightedArticle}: {highlightedArticle: BlogPost}) {
@@ -25,7 +25,7 @@ function HighlightPost({highlightedArticle}: {highlightedArticle: BlogPost}) {
                                 </ul>
                             </div>
                             <div className="featured-post-thumb">
-                                <img src={`${window.location.origin}/blog${highlightedArticle.highlightedPostImg}`} className='feature-post-thumb-max-size' alt="feature-post-thumb" />
+                                <img src={window.location.origin + highlightedArticle.highlightedPostImg} className='feature-post-thumb-max-size' alt="feature-post-thumb" />
                             </div>
                         </article>
                     </div>

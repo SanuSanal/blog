@@ -5,7 +5,7 @@ function Article({ article }: { article: BlogPost }) {
   return (
     <article className="blog-post">
       <div className="blog-post-thumb">
-        <img src={`${window.location.origin}/blog${article.articlePostImg}`} alt="blog-thumbnail" />
+        <img src={window.location.origin + article.articlePostImg} alt="blog-thumbnail" />
       </div>
       <div className="blog-post-content">
         <div className="blog-post-tag">

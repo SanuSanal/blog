@@ -6,10 +6,11 @@ import { Link, useParams } from "react-router-dom";
 import BlogPost from "../data/BlogPost";
 import articleContents from "../data/blog-content";
 import FileNotFoundPage from "./FileNotFoundPage";
+import ShareButtons from "../components/ShareButtons";
 
 const Blog = () => {
     const { articleKey } = useParams();
-    const origin = window.location.origin + '/blog';
+    const origin = window.location.origin;
 
     const [htmlContent, setHtmlContent] = useState<string>("");
 
@@ -90,12 +91,7 @@ const Blog = () => {
                         <div className="share-now">
                             <a className="scrol">Share</a>
                             <div className="sociel-icon">
-                                <ul>
-                                    <li> <a href="https://github.com/SanuSanal" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a></li>
-                                    <li> <a href="https://www.instagram.com/a_bad_code" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/sanalmachingal/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a></li>
-                                    <li> <a><i className="fab fa-facebook"></i></a></li>
-                                </ul>
+                                <ShareButtons url={origin + currentArticle?.key} title={currentArticle?.title} />
                             </div>
                         </div>
                     </div>
@@ -110,7 +106,7 @@ const Blog = () => {
                                     {currentArticle?.date} - {currentArticle?.timeToRead}
                                 </li>
                             </ul>
-                            <img src={origin + currentArticle?.bannerImg} alt="banner" className="article-banner" />
+                            {currentArticle?.bannerImg && (<img src={origin + currentArticle?.bannerImg} alt="banner" className="article-banner" />) }
 
                             <div className="article-content" dangerouslySetInnerHTML={{ __html: htmlContent }} />
 

@@ -1,4 +1,4 @@
-import author from '../images/about/author.png';
+import author from '../images/about/author.jpg';
 import blob1 from '../images/about/blob1.svg';
 import blob2 from '../images/about/blob2.svg';
 import banner from '../images/about/banner.png';
@@ -10,7 +10,7 @@ function AboutPage() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="about-me">
-                            <img src={author} alt="image" />
+                            <img src={author} alt="image" className='rounded-circle' />
                             <h3>Hi I Sanal Machingal</h3>
                             <p>I’m a software engineer specializing in Java backend development. Coding is more than just a profession for me—it’s a passion that drives me to constantly explore new programming languages and frameworks. Over the years, I’ve created apps in Flutter, built POCs using Spring Boot, Spring Integration, and Spring Security, and even dabbled in Python scripts, like automating WhatsApp message sending. Beyond the world of code, I’m an avid reader and sports enthusiast who enjoys playing football and cricket in my free time.</p>
                             <p>This blog is my space to document my findings—from programming tips to technical experiments. It’s not just a personal journal for future reference but also a way to help others who might face similar challenges in their tech journey. </p>

@@ -7,7 +7,7 @@ function TrendingPost({article}: {article: BlogPost}) {
         <div className="latest-widget">
             <div className="latest-widget-thum">
               <Link to={`/article/${article.key}`}>
-                <img src={`${window.location.origin}/blog${article.articlePostImg}`} alt="blog-thum" /></Link>
+                <img src={window.location.origin + article.articlePostImg} alt="blog-thum" /></Link>
               <div className="icon">
                 <Link to={`/article/${article.key}`}>
                   <img src={icon} alt="icon" /></Link>
